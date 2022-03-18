@@ -1,0 +1,300 @@
+{%extends 'base.html'%}
+
+{%block header%}
+{%endblock%}
+
+{%block content%}
+<div class="container">
+    <div class="header">
+        <div class="logo">
+            <img src="{{url_for('static', filename='img/logo.jpg')}}" alt="Logo">  
+        </div>
+        <div class="navigation_menu">
+            <ul>
+                <li>About</li>
+                <li>Contacts</li>
+                <li>Payments</li>
+                <li>Capital</li>
+                <li>Issuing</li>
+                <li>Commerce</li>
+                <li>Converter</li>
+                <li>Plans</li> 
+                <li>Help</li>
+                <li class="nav_search">
+                    <form class="example" action="action_page.php">
+                        <input type="text" placeholder="" name="search">
+                        <button type="submit">
+                            <i class="fa fa-search"></i>
+                            <!-- <img src="{{url_for('static', filename='img/icons8-search-50.png')}}" alt="Search"> -->
+                        </button>
+                      </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="carousel">
+        <img class="slideshow" src="{{url_for('static', filename='img/0.jpg')}}" alt="">
+        <img class="slideshow" src="{{url_for('static', filename='img/1.jpg')}}" alt="">
+        <img class="slideshow" src="{{url_for('static', filename='img/2.jpg')}}" alt="">
+        <img class="slideshow" src="{{url_for('static', filename='img/3.jpg')}}" alt="">
+        <img class="slideshow" src="{{url_for('static', filename='img/4.jpg')}}" alt="">
+        <img class="slideshow" src="{{url_for('static', filename='img/5.jpg')}}" alt="">
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="nextImage(-1)">&#10094;</a>
+        <a class="next" onclick="nextImage(1)">&#10095;</a>
+    </div>
+     <!-- The dots/circles -->
+    <div class="indicator" style="text-align:center">
+        <span class="dot" onclick="currentImage(1)"></span>
+        <span class="dot" onclick="currentImage(2)"></span>
+        <span class="dot" onclick="currentImage(3)"></span>
+        <span class="dot" onclick="currentImage(4)"></span>
+        <span class="dot" onclick="currentImage(5)"></span>
+        <span class="dot" onclick="currentImage(6)"></span>
+    
+    </div>
+    <div class="section_one">
+        <div class="a zoom">
+            <img src="{{url_for('static', filename='img/bitcoin1.PNG')}}" alt="">
+            <h1>Packages</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias blanditiis deserunt expedita est consectetur ipsum alias laudantium voluptates laborum itaque.</p>
+        </div>
+        <div class="b zoom">
+            <img src="{{url_for('static', filename='img/bitcoin2.PNG')}}" alt="">
+            <h1>Tax Services</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias blanditiis deserunt expedita est consectetur ipsum alias laudantium voluptates laborum itaque.</p>
+        </div>
+        <div class="c zoom">
+            <img src="{{url_for('static', filename='img/bitcoin3.PNG')}}" alt="">
+            <h1>Operation</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias blanditiis deserunt expedita est consectetur ipsum alias laudantium voluptates laborum itaque.</p>     
+        </div>
+        <div class="d zoom">
+            <img src="{{url_for('static', filename='img/bitcoin1.PNG')}}" alt="">
+            <h1>Compliance</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias blanditiis deserunt expedita est consectetur ipsum alias laudantium voluptates laborum itaque.</p>
+        </div>
+    </div>
+    <div class="section_two">
+        <div class="first zoom">
+            <img src="{{url_for('static', filename='img/Visa.PNG')}}" alt="">
+            <div class="visaContent">
+            <p id="virtual">Virtual <br> Cards</p>
+            <p><a href="">Read more</a></p>
+            </div>
+        </div>
+        <div class="puzzle zoom">
+            <p id="puzzle">Digital Currency</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eaque doloribus non, labore a officiis nulla nobis omnis necessitatibus quaerat quo repellendus beatae voluptates soluta totam consequuntur! Quae, debitis voluptates!
+            Optio facilis eius cum dicta sequi aut harum provident rerum aspernatur voluptates quasi ullam mollitia dolorum laudantium obcaecati, modi a. Odio minima ducimus eos minus cumque tempora dignissimos voluptate. Non?
+            </p>
+        </div>
+    </div>
+    <div class="section_three">
+        <div class="head zoom">
+            <p class="heading">Stock Market</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus placeat optio voluptates, nemo praesentium aspernatur fugiat. Facere nisi veritatis tenetur illum expedita temporibus inventore non ab numquam, nobis eum et?
+            Molestias enim modi placeat expedita autem. Ducimus quam ex laudantium aut totam eveniet consequuntur natus et eos voluptatibus fuga exercitationem, dolores accusantium officiis ab, non eligendi dicta! Nostrum, perspiciatis placeat.
+            Quisquam, ipsum. Blanditiis pariatur nihil laudantium quam cumque recusandae adipisci molestias, quia eveniet numquam quibusdam veniam iure facilis cum perspiciatis totam modi, aliquam dolorem. Harum a quidem sequi alias dolorem.</p>
+        </div>
+        <div class="neck zoom">
+            <p class="heading">Trading</p>
+            <p >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, ad cumque optio quo doloremque quam, fugiat pariatur, ipsa nobis suscipit dicta magnam nesciunt vitae minima similique quod minus molestias ex.
+            Suscipit tenetur dolorum accusamus animi temporibus sit atque quae ipsam possimus rerum? Alias suscipit ea facere, enim blanditiis, id illum aut aliquid voluptatem similique obcaecati cupiditate veniam omnis exercitationem odio?
+            Quos sit officiis consequuntur atque accusantium dolorem, distinctio iusto aliquam voluptates. Exercitationem, tempore, odit quos eius veritatis debitis vero vel ut quasi vitae doloribus. Odit quas molestias sint eius debitis!</p>
+
+        </div>
+        <div class="shoulders zoom">
+            <p class="heading">Smart Contracts</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias deleniti voluptatem illum nemo odit illo ipsum fugit veritatis nihil, nisi aperiam quam perferendis in! Ea praesentium voluptatum velit quae numquam.
+            Aspernatur, ad eligendi vitae accusamus corrupti facere ullam obcaecati amet impedit ut eveniet dicta! Voluptatum, possimus facilis perspiciatis fuga obcaecati cupiditate ratione cum officiis harum dolores sint, nobis ullam saepe.
+            Expedita quod ipsum dolorum numquam eligendi asperiores. Dolore, ab est? Esse, reiciendis, deleniti est totam nulla placeat minus eos rem ratione perferendis repellat. Libero iusto atque iure est molestiae! Unde.</p>
+        </div>
+        <div class="waist zoom">
+            <p class="heading">Asset Pricing</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque autem corporis eaque quae ducimus iure beatae magnam labore eos quis omnis sunt dignissimos, vero, at nobis ad. Perferendis, officia numquam?
+            Pariatur facere nulla aliquid delectus excepturi corrupti sequi soluta hic molestiae, itaque architecto dolorem, repellendus numquam iste quaerat assumenda alias! Assumenda possimus, magni atque error perferendis mollitia earum? Ullam, qui.
+            Mollitia fugiat, maiores quas pariatur aliquid cum unde deserunt repudiandae. Quo, aperiam aut ratione totam nesciunt perferendis nulla! Illum exercitationem fuga sint voluptate facere. Aut corporis in quod maiores sint.</p>
+        </div>
+        <div class="knees zoom">
+            <p class="heading">Credit Rating</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quo veritatis illo quas maxime aliquam repudiandae alias excepturi nihil sit ipsa dicta at, tempora explicabo blanditiis voluptatibus harum possimus nulla?
+            Omnis nobis numquam error placeat perspiciatis a dolor laudantium quaerat, culpa odio ipsam debitis magnam quis delectus esse consectetur aspernatur aliquid fugit velit soluta nam sint obcaecati suscipit cum. Corrupti.
+            Officiis eligendi accusantium tempora voluptatem ullam, blanditiis numquam adipisci possimus laudantium quo amet, eius eos sed cumque dolor ipsa necessitatibus tempore quisquam recusandae aliquid quam aspernatur alias ad quibusdam. Minima.</p>
+        </div>
+        <div class="toes zoom">
+            <p class="heading">Morgages</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione asperiores provident repellendus laboriosam aperiam quo modi? Consequatur natus quasi odio voluptas mollitia veritatis totam officiis odit, nam ut fugiat officia!
+            Quas nisi voluptatum nihil tempora error neque dolores! Aperiam, aspernatur? Accusantium exercitationem amet provident quis in, molestias cumque accusamus natus numquam esse, tempora saepe dolorum rem placeat quasi optio fugiat!
+            Aliquam officia necessitatibus ut ipsam laboriosam eius quasi fuga, ex minus architecto tempore laudantium corporis deleniti. Iusto impedit voluptatem hic explicabo ad illo quam, aliquam sunt error laboriosam quaerat facere?</p>
+        </div>
+    </div>
+    <div class="section_four zoom">
+        <div class="ledgerTechnology">
+            <p class="heading">Ledger Technology</p>
+            <img src="{{url_for('static', filename='img/ledger_technology.PNG')}}" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ipsum quod repellendus illum, dolor ea dolore commodi, beatae quos totam doloremque ad fugit. Vel explicabo perferendis deleniti neque fugiat eos.
+            Illo obcaecati fugiat odio dolores ut magnam veritatis sequi omnis delectus id, laudantium doloribus inventore voluptates itaque numquam, laborum commodi officiis eaque ad fugit. Aspernatur enim nostrum voluptas repellendus asperiores.
+            Harum, dolorem? Recusandae consequatur saepe molestias dolorum ducimus rerum nulla libero, veniam veritatis a esse temporibus itaque mollitia laboriosam minus consequuntur vitae ipsum distinctio magnam! Veniam maxime odit doloremque cumque.
+            Corporis excepturi dicta nobis esse dolores, culpa laboriosam voluptatum sapiente non iure accusamus molestiae iusto sequi placeat sit atque beatae earum! Commodi labore nam ratione, ducimus alias libero? Sint, dolore?
+            Aperiam, dolores natus repellendus voluptatem at dolore quasi excepturi minima sunt ipsum, optio quibusdam architecto voluptas id ea doloremque eius reprehenderit temporibus odio dicta aspernatur inventore. Qui et quam nulla?
+            Quibusdam, optio voluptates nostrum autem, voluptatem eos tempora sed omnis maiores corrupti magni consectetur nobis odit qui! Ratione et omnis adipisci voluptate perspiciatis modi laboriosam enim, exercitationem obcaecati quisquam quaerat.
+            Exercitationem reiciendis quam numquam nobis fugit blanditiis, placeat vitae impedit quia atque possimus ipsum eos iste est maiores. Inventore necessitatibus quod dolorem minima veritatis perspiciatis quaerat dignissimos explicabo nam ab.
+            Placeat, saepe esse ullam adipisci voluptates impedit beatae suscipit numquam atque iusto, accusamus harum sapiente, officia fugiat quod distinctio architecto. Eligendi cupiditate libero perferendis! Animi voluptatem veritatis incidunt recusandae reprehenderit.
+            Odio distinctio modi ut porro in est commodi dolorum voluptatem tempora accusantium maiores, non laudantium harum ea dicta. Tempora maiores eveniet sed assumenda ex sint, voluptate aut repudiandae ipsam quis?
+            Ipsam quaerat atque, assumenda omnis voluptas inventore neque modi rerum incidunt quas nulla, sint molestias ipsa, expedita minima rem. Libero vel earum temporibus, omnis qui ab officiis est voluptas quos?
+            Laudantium saepe omnis soluta perspiciatis reprehenderit velit excepturi dicta dolores rem distinctio modi tenetur minus possimus incidunt consequuntur, hic exercitationem voluptatum eligendi, aut harum iste tempore ad ullam. At, ut!
+            Similique delectus autem officiis totam minus quasi quaerat asperiores voluptate nobis minima dolores ad non nihil numquam repellendus, quisquam nemo mollitia quos placeat quam, assumenda ut natus repellat! Inventore, obcaecati!
+            Fugit sunt libero, eum ullam possimus, assumenda ratione perferendis sequi saepe maxime accusamus veritatis ut. Beatae nam perspiciatis nostrum ab quisquam, vitae aperiam nisi unde sequi ipsum architecto dolor quidem.
+            Ipsum magni similique modi blanditiis accusantium, aperiam id quod, eligendi odio fugiat eaque omnis quis tempore error asperiores, minima iste atque esse. Impedit sapiente facilis, quo repellendus magni itaque quisquam.
+            Consequatur, officia dolorum dolor culpa in velit beatae rem enim. Totam excepturi voluptatem dolores nostrum maiores? Accusamus reiciendis sapiente voluptatibus ipsum consequatur deserunt qui! Impedit dolor placeat iusto porro non?
+            Accusamus voluptatum minus libero! Quasi accusamus reprehenderit natus sed cum aspernatur voluptatibus similique error rerum. Nulla voluptatum laudantium, consectetur maiores unde praesentium fuga accusamus eius sint ipsum quaerat blanditiis inventore.
+            Velit non expedita error qui! Sit natus, aliquam perferendis nesciunt atque aperiam culpa, quos assumenda totam doloribus quaerat, rem explicabo repudiandae dignissimos corrupti labore illum numquam libero cumque tenetur ratione.
+            Fuga aliquam ducimus itaque, distinctio laboriosam maxime, temporibus atque veritatis recusandae harum ut fugiat voluptatum perspiciatis debitis autem provident. Veritatis inventore similique facilis minima aliquam, velit nulla odio neque vero.
+            Obcaecati, facere cum. Inventore reprehenderit laboriosam expedita perspiciatis quis, omnis quidem hic, reiciendis, ullam nemo rerum? Culpa, porro modi libero ad quae voluptatum illum ratione cum voluptatem, fugit, voluptatibus enim?
+            Sed officiis pariatur cum accusantium, omnis sunt eaque sapiente eos perspiciatis ut, ab a suscipit nam temporibus error repellendus rem? Reprehenderit inventore illum dicta aut ad fuga cumque incidunt possimus!
+            Voluptas veritatis, nobis, consequatur laboriosam praesentium expedita quo, nostrum laudantium excepturi a voluptatem? Expedita facilis eius dolor modi nulla pariatur odio quasi ducimus. Illo iste velit molestias, eos architecto iure.
+            Accusantium blanditiis rem, doloremque deleniti recusandae iusto necessitatibus sit optio provident ut sint ex reiciendis. Labore voluptatem fugit maxime quasi reprehenderit beatae, quos neque perspiciatis ducimus, quia, tempore quis molestiae.
+            Iusto ad assumenda consequuntur corrupti consequatur earum officia iste excepturi optio praesentium maxime, alias quidem aliquam reprehenderit aperiam. Non nulla itaque dolorum culpa omnis atque sapiente. Repellat voluptatum voluptate eaque.
+            Neque sequi aliquid temporibus maxime mollitia animi, error sit nisi exercitationem consequatur! Ex harum ad exercitationem officia ipsam doloremque, odio reprehenderit, dolores, ut labore et quis. Id rem numquam deleniti.
+            Recusandae nisi expedita debitis dicta error fugiat, quo consectetur voluptatum corporis, et, odit maxime distinctio esse libero suscipit pariatur perferendis ratione eius! Eaque dignissimos aliquid accusamus expedita, quo nam quidem.
+            Nisi iste perferendis vel rem, cumque commodi aut quis quos eum sapiente debitis totam consectetur nesciunt illo voluptatum voluptates accusamus fugit laborum ab voluptas! Delectus quam iure magnam minima ratione.
+            Ex dolore totam ullam natus. Magnam iste voluptates qui earum non rerum laborum totam iusto voluptatibus consequatur voluptate, at quaerat deserunt ut amet cumque reiciendis sequi assumenda asperiores id. Ipsam.
+            Sapiente veritatis ea in natus est placeat ab dignissimos eos expedita fugit corporis libero mollitia, nisi voluptatem quisquam, consectetur impedit nihil a tempora aperiam adipisci. Aut nemo obcaecati iste minus.
+            Fugiat cumque perspiciatis aliquid a eum mollitia excepturi repellat debitis sapiente, voluptatum distinctio voluptate, doloribus nemo commodi natus? Blanditiis aliquid natus accusantium delectus modi nisi laborum asperiores. Neque, veniam sint.
+            Illo dicta reiciendis at molestias nostrum beatae esse, repellendus blanditiis voluptas possimus, enim cum nam quae odit porro laboriosam sint fugiat eligendi cupiditate atque accusamus? Accusantium quis sit laudantium qui!
+            Eveniet reiciendis accusantium voluptatem voluptatibus incidunt rem, officia in asperiores corporis magnam rerum, quisquam facere molestias eligendi dolorum est architecto ad eius, pariatur perspiciatis. Optio sint iure voluptatum neque? Veniam.
+            Odit ducimus accusamus facere consequatur debitis nulla sed vel autem nisi suscipit reprehenderit magni commodi veritatis, minima voluptatibus ullam sint ipsa iste non numquam. Provident officiis recusandae commodi molestias cupiditate.
+            Nesciunt, tenetur, minus quisquam atque reprehenderit doloribus non nisi magnam placeat ipsam at ad debitis eaque eveniet a, optio unde! Deleniti, adipisci culpa odit sint officia molestiae minima numquam quos!
+            Voluptate sapiente ex, omnis alias distinctio libero eveniet. Quaerat aliquid ab error, facilis itaque nobis in placeat ducimus laboriosam, repudiandae accusantium, ullam voluptatem dolore consectetur a animi provident asperiores autem.
+            Dignissimos, reiciendis quo! Vel saepe sint consequuntur voluptatum nemo sed consectetur a, similique aliquid officia, numquam, blanditiis eligendi iste modi quibusdam. At iusto repudiandae alias, dolore labore quos dolor excepturi.
+            Velit pariatur quia ipsa quisquam atque! Porro hic consequatur doloremque? Magni eius repudiandae quo. Veritatis ullam ipsa voluptate magnam recusandae nam voluptatum est, eaque accusantium illo! Quis aspernatur nemo accusantium.
+            Nostrum possimus perferendis odio delectus fugit! Nam perferendis iusto ut sequi. Consequuntur quos, maiores eaque sapiente exercitationem obcaecati consequatur tempora, vero odio commodi suscipit esse dolor atque ab necessitatibus veniam.
+            Dolorum, unde eum! Velit expedita impedit ut minus debitis, nesciunt esse perspiciatis a atque, quis enim illum libero, ea alias voluptate magni nostrum dolorum dignissimos. Nostrum vero atque iusto reprehenderit?
+            Sint consequuntur eaque id, provident facere dolores ut impedit sunt itaque recusandae doloremque ea amet animi fugiat at cum eligendi numquam perspiciatis officiis consectetur non. Perspiciatis fuga consequuntur deserunt quia.
+            Maxime nostrum nisi, dignissimos quo iste unde id voluptatibus necessitatibus eius quam harum beatae. Possimus officiis perspiciatis in id! Laudantium iste repellat praesentium blanditiis tempore inventore mollitia minima nesciunt aut!
+            Quam, voluptatum natus excepturi iste tenetur molestiae rerum ea rem id quas, soluta repellendus praesentium accusantium numquam doloremque voluptatem molestias laboriosam temporibus commodi cupiditate? Repellendus nulla modi facilis impedit iste.
+            Quod error facilis minus dolorem illum fugiat saepe, praesentium distinctio laudantium atque id commodi perspiciatis perferendis nulla? Voluptatum dolorum ducimus pariatur, debitis inventore nemo enim sit eius sequi! Ducimus, mollitia.
+            Cupiditate perferendis animi odit velit placeat minima quia fugit! Blanditiis ut sapiente officiis facilis at recusandae praesentium ex numquam? Vitae, molestias quae iure error magni accusantium impedit aspernatur illo recusandae.
+            Delectus quibusdam iure eveniet dolore aliquid eaque obcaecati quasi doloremque quae voluptatum quam, nesciunt repellendus enim at est odio similique dolor expedita distinctio? Est perspiciatis voluptatibus non exercitationem recusandae eius.
+            Officiis illo aut error repudiandae explicabo similique perferendis quod ea placeat ex et quae quisquam recusandae nobis ullam id necessitatibus distinctio, sequi eius voluptatem quas accusamus delectus doloremque? Ducimus, quos?
+            Atque vel temporibus, id in corporis quo assumenda voluptates blanditiis impedit voluptate! Minus, earum sapiente commodi eius illo veniam culpa, eligendi corrupti, velit accusamus ut nihil hic ullam ad autem!
+            Mollitia, velit obcaecati! Facilis iste laboriosam quo delectus adipisci mollitia ea temporibus nemo quisquam ratione reiciendis corporis alias, veniam laborum, ipsum illo recusandae aperiam animi expedita, omnis esse. Tempore, eum.
+            Dolorem tenetur repellendus voluptas, optio veritatis id et consectetur nisi distinctio quo, dignissimos blanditiis? Assumenda doloremque laboriosam, laudantium impedit dignissimos natus quam numquam accusamus reprehenderit ut nostrum voluptatem non at?
+            Cumque vitae vero eligendi, inventore corporis non. Voluptatibus modi culpa rerum saepe consectetur quam at, pariatur neque minima inventore odio voluptates, nostrum architecto, mollitia sit praesentium quasi. Dolore, laborum dolores?
+            Repellat enim ut architecto! Velit, quaerat excepturi rerum quo vel porro nemo dolores quas. Cum nesciunt at architecto, beatae harum ad quo in cumque commodi dolor, mollitia, temporibus error eaque?</p>
+        </div>
+        <div class="financialManagement">
+            <p class="heading zoom">Personal Financial Management</p>
+            <img src="{{url_for('static', filename='img/personal_finances.PNG')}}" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi aut, exercitationem error id sapiente recusandae quisquam repellendus nemo repudiandae quos assumenda ullam! Quis eum consectetur culpa pariatur illum vitae totam!
+            Libero architecto deserunt molestiae ipsam ex nam pariatur a eaque sed odio. Ex, assumenda! Unde cumque mollitia debitis asperiores voluptates alias. Labore aliquid officiis quisquam incidunt, accusamus doloremque magnam illo.
+            Iste, alias. Reprehenderit, nisi tempora itaque commodi eligendi odio ad. Beatae, eveniet nobis. Exercitationem minima reiciendis voluptate? Quas fugiat modi, aspernatur assumenda, qui nulla sapiente ut debitis ratione, adipisci cumque?
+            Assumenda, corrupti? Asperiores magni exercitationem commodi corporis. Esse quisquam debitis quod natus distinctio, voluptates quis rerum cumque, alias repellendus et maiores corporis commodi hic veniam animi? Explicabo, recusandae mollitia! Odio?
+            Minus temporibus labore aspernatur at impedit dicta beatae quo atque minima, voluptatem dolor recusandae molestias possimus in? Eum laboriosam beatae et error enim deleniti odit inventore, eaque velit nisi voluptas?</p>
+        </div>       
+    </div>
+    <div class="fifth">
+        <div class="moja zoom">
+            <img src="{{url_for('static', filename='img/bitcoin2.PNG')}}" alt="">
+            <p class="heading">Latest News</p>
+            <p>We have introduced the seamless identification .... <a href="">Read More...</a></p>
+        </div>
+        <div class="mbili zoom">
+            <p class="heading">Mpesa Integration</p>
+            <p>We have introduced the seamless identification .... <a href="">Read More...</a></p>
+        </div>
+        <div class="tatu zoom">
+            <img src="{{url_for('static', filename='img/bitcoin1.PNG')}}" alt="">
+            <p class="heading">Digital Wallet</p>
+            <p>We have introduced the seamless identification .... <a href="">Read More...</a></p>
+        </div>
+    </div>
+</div>
+<div class="sixth">
+    <p class="heading ">Our Partners</p>
+    <div class="contents">
+        <div class="alpha">
+            <img src="{{url_for('static', filename='img/log.PNG')}}" alt="">
+            <p>Alpha</p>
+        </div>
+        <div class="beta ">
+            <img src="{{url_for('static', filename='img/log.PNG')}}" alt="">
+            <p>Beta</p>
+        </div>
+        <div class="theta">
+            <img src="{{url_for('static', filename='img/log.PNG')}}" alt="">
+            <p>Theta</p>
+        </div>
+        <div class="delta">
+            <img src="{{url_for('static', filename='img/log.PNG')}}" alt="">
+            <p>Delta</p>
+        </div>
+        <div class="omicron">
+            <img src="{{url_for('static', filename='img/log.PNG')}}" alt="">
+            <p>Delta</p>
+        </div>
+        <div class="mu">
+            <img src="{{url_for('static', filename='img/log.PNG')}}" alt="">
+            <p>Delta</p>
+        </div>
+        <div class="sigma">
+            <img src="{{url_for('static', filename='img/log.PNG')}}" alt="">
+            <p>Delta</p>
+        </div>
+        <div class="omega">
+            <img src="{{url_for('static', filename='img/log.PNG')}}" alt="">
+            <p>Omega</p>
+        </div>
+        <div class="gamma">
+            <img src="{{url_for('static', filename='img/log.PNG')}}" alt="">
+            <p>Gamma</p>
+        </div>
+        <div class="epsilon">
+            <img src="{{url_for('static', filename='img/log.PNG')}}" alt="">
+            <p>Epsilon</p>
+        </div>
+        <div class="zeta">
+            <img src="{{url_for('static', filename='img/log.PNG')}}" alt="">
+            <p>Zeta</p>
+        </div>
+        <div class="eta">
+            <img src="{{url_for('static', filename='img/log.PNG')}}" alt="">
+            <p>Eta</p>
+        </div>
+        <div class="iota">
+            <img src="{{url_for('static', filename='img/log.PNG')}}" alt="">
+            <p>Iota</p>
+        </div>
+ </div>
+</div>
+    <div class="footer">
+        <div class="firstColumn">
+            <div class="items">
+                <ul>
+                    <li>Home</li>
+                    <li>About us</li>
+                    <li>Contacts</li>
+                    <li>Payments</li>
+                    <li>Commerce</li>
+                    <li>Converter</li>
+                    <li>Plans</li>
+                </ul>
+            </div>
+        </div>
+        <div class="secondColumn">
+            <p>Sign up to receive our newsletter</p>
+            <form action="">
+                <label for="">Email</label>
+                <input type="email">
+                <input type="submit">
+            </form>
+            
+        </div>
+    </div>
+    <hr>
+    <div class="copyright">
+        <p>cc</p>
+    </div>
+</div>
+{%endblock%}
